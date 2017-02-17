@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+# Hackathon 2017 @ ICM : Wielkie Wyzwania Programistyczne
 
-You can use the [editor on GitHub](https://github.com/KDMSZK30/MapTheGap/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+(www) http://akademia.icm.edu.pl/szkolenia/hackathon-map-the-gap
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Download (use Your ICM login/password)
+(zip file:) https://git.icm.edu.pl/pk322266/MapTheGap/repository/archive.zip  
+(repository:) git clone https://git.icm.edu.pl/pk322266/MapTheGap.git MapTheGap  
 
-### Markdown
+### Build & Run
+- **manual** (make sure to prepare nodes.txt file)  
+(eg. @Cray): module load java  
+(build): javac -d bin -sourcepath src -cp lib/PCJ-5.0.0.SNAPSHOT-bin.jar:lib/opencsv-3.8.jar src/MapTheGap.java  
+--> for more info, to the above command add: -Xlint:unchecked  
+(run): java -cp bin:lib/PCJ-5.0.0.SNAPSHOT-bin.jar:lib/opencsv-3.8.jar MapTheGap [warszawa|polska]  
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- **using RunJob.sh script** (Slurm)  
+sh RunJob.sh <#nodes>  <#tasks per node> [warszawa|polska]  
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/KDMSZK30/MapTheGap/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Project directory structure
+- **bin/** (placeholder for compiled code)
+- **data/** (input data files)
+    - LTE1800_2016_12_27.csv : all BTS points (converted .xlsx -> .csv)
+    - bp_konkurs_2_20160912_Warszawa.csv : Blind spots (only Warsaw)
+- **lib/** (libraries, see lib/Info.txt)
+- **maps/** (maps & visualisations)
+    - GoogleMap_template.js : template of interactive Google map
+- **src/** (project source files)  

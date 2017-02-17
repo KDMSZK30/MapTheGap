@@ -1,0 +1,25 @@
+** GeneticAlgorythms **
+Interesting read with examples: http://www.theprojectspot.com/tutorial-post/applying-a-genetic-algorithm-to-the-travelling-salesman-problem/5
+				http://www.theprojectspot.com/tutorial-post/creating-a-genetic-algorithm-for-beginners/3
+Traveling Salesman via Parallel Genetic Algorithm: https://github.com/hadsed/genetictsp
+Genetic Algorithm for the Travelling Salesman Problem: https://github.com/stubbedtoe/Travelling-Salesman--a-Genetic-Algorithm
+Simple (but heavily parameterized) tool for testing genetic algorithms on the traveling saleman problem: https://github.com/bryanesmith/traveling-salesman-genetic-algorithms
+GA in java: http://stackoverflow.com/questions/1575061/ga-written-in-java
+JGAP: http://jgap.sourceforge.net/
+The project spot: http://www.theprojectspot.com/tutorials
+Jenetics: http://jenetics.io/
+
+* Travelling Salesman
+https://sourceforge.net/directory/os:mac/?q=travelling%20salesman%20problem%20java
+https://sourceforge.net/p/tspga/code/HEAD/tree/TSPGA/src/my/tsp/TSP.java#l325
+https://github.com/evandrix/SPOJ/blob/master/DP_Main112/Solving-Traveling-Salesman-Problem-by-Dynamic-Programming-Approach-in-Java.pdf
+
+** k-d tree **
+https://en.wikipedia.org/wiki/K-d_tree
+http://www.drdobbs.com/cpp/parkd-parallel-k-d-tree-construction-in/227500206
+http://home.wlu.edu/~levys/software/kd/
+http://robowiki.net/wiki/Kd-tree
+
+*** list of algorithms for VRP(vehicle routing problem)
+
+http://neo.lcc.uma.es/vrp/solution-methods/

@@ -1,0 +1,16 @@
+/.idea
+/bin/*
+/build
+/captures
+/local.properties
+/maps/*.html
+/nbproject
+/test
+*.iml
+.DS_Store
+.externalNativeBuild
+.gradle
+nodes.txt
+run.out
+run.err
+data/bp_konkurs_2_20160912.csv
